@@ -1,0 +1,99 @@
+/* ContactPage.css */
+
+.contact-page {
+  min-height: 100vh;
+    max-width: 1000px;
+    background-color: #f0f0f0;
+    width: 100%;
+    margin: auto;
+}
+
+.contact-page__container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.contact-card {
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(57, 50, 42, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin-right: 0px;
+  padding-right: 49px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.contact-info {
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 20px;
+  
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  line-height: 2;
+  color: #333;
+}
+.contact-info a {
+  text-decoration: none;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .contact-page__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card,
+  .contact-info {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
